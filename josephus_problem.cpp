@@ -10,17 +10,12 @@ int main() {
     for (int i = 1; i <= n; i++) {
         q.push(i);
     }
-
-    while (!q.empty()) {
-
-        // Move first person to the back
+    while(!q.empty()){
         q.push(q.front());
         q.pop();
-
-        // Remove the next person
         cout << q.front() << " ";
         q.pop();
     }
-
     return 0;
 }
+    
